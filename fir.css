@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: lightgrey;
+}
+
+.box1 {
+    background-color: #1F2937;
+    height: 55vh;
+    width: 100%;
+    min-height: 450px;
+    margin: 0;
+    padding: 0;
+    /*display: flex;              !* optional: if you want .header centered inside *!*/
+    /*justify-content: center;    !* optional *!*/
+    /*align-items: flex-start;        !* optional *!*/
+}
+
+.header {
+    display: flex;              /* make logo + sideh sit side by side */
+    justify-content: space-around; /* logo left, links right */
+    align-items: flex-start;        /* vertical alignment */
+    width: 100%;                /* stretch across parent */
+    padding: 20px 2rem;            /* spacing from edges */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-wrap: wrap;
+}
+
+.sideh {
+    display: flex;              /* arrange its children horizontally */
+    gap: 1.5rem;
+    padding: 5px /* spacing between links */
+}
+
+.sideh div {
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    /*border: 1px solid lightgrey;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section .headline {
+    /*border: 1px solid red;*/
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f9faf8;
+    margin-bottom: 1rem;
+}
+
+.text-section .subtext {
+    font-size: 1.2rem;
+    color: #e5e6eb;
+    margin-bottom: 2rem;
+}
+
+.text-section .signup {
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.text-section .signup:hover {
+    background-color: #2563eb; /* darker blue on hover */
+}
+
+.image-section {
+    /*border: 1px solid red;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.random-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2937;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.boxes {
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.box-container {
+    /*border: 2px solid green;*/
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    align-items: center;
+    gap: 3rem;
+}
+
+.box-a, .box-b, .box-c, .box-d {
+    border: 3px solid #3882f6;
+    width: 200px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.subtext-image {
+    display: flex;
+    font-size: 1rem;
+    width: 200px;
+    margin-top: 4px;
+    justify-content: center;
+    text-align: center;
+}
+
+.grey-box {
+    background-color: #E5E7EB;
+    width: 100%;
+    height: 40vh;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grey-box-text {
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid red;*/
+    width: 60%;
+    color: #1F2937;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    flex-direction: column;
+}
+
+.thor {
+    /*border: 2px solid red;*/
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60vh;
+}
+
+.action-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    height: 20vh;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.action-box-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 3;
+}
+
+.action-box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.abt-heading {
+    text-align: left;
+    /*border: 2px solid red;*/
+    width: 80%;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.abt-content {
+    /*border: 2px solid red;*/
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: left;
+    color: white;
+}
+
+.abt-button {
+    border: 2px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.abt-button:hover {
+    background-color: #2563eb;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #1F2937;
+}
+
+.footer-text {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    font-family: Bahnschrift, cursive;
+}
+
+
